@@ -21,14 +21,13 @@ limit 0, 3;
 ### Q2.
 
 # 재직 중인 ‘대리’들의 직원명, 직급명, 급여, 사원번호, 이메일, 전화번호, 입사일을 출력하세요.
-#
 # 단, 급여를 기준으로 내림차순 출력하세요.
 
 select
-    a.EMP_NAME,
-    b.JOB_NAME,
-    a.SALARY,
-    a.EMP_ID,
+    a.EMP_NAME as 직원명,
+    b.JOB_NAME as 직급명,
+    a.SALARY as 급여,
+    a.EMP_ID as 사번,
     a.EMAIL,
     a.PHONE,
     a.HIRE_DATE
